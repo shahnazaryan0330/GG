@@ -1,0 +1,258 @@
+body {
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+@font-face {
+   font-family: 'noto-medium';
+   src: url(./fonts/NotoSans-Medium.ttf);
+}
+
+.form {
+   width: 100%;
+   margin-top: 40px;
+}
+
+.form div {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-color: #e7e7e7;
+   width: max-content;
+   padding: 20px 40px;
+   border-radius: 10px;
+   margin: auto;
+   border: 3px solid #a2a2a2;
+}
+
+input,
+button {
+   font-family: 'noto-medium';
+   font-size: 12pt;
+   display: block;
+   width: 150px;
+   padding: 10px 5px;
+   border-radius: 4px;
+   background: white;
+   border: 2px solid #a2a2a2;
+   outline: none;
+   margin: 15px auto;
+   color: #414141;
+}
+
+button {
+   background: #00af75;
+   cursor: pointer;
+   color: white;
+}
+
+.results {
+   width: 100%;
+   margin: 50px 0;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   border-radius: 10px;
+}
+
+.num {
+   width: 30px;
+   padding: 7px;
+   text-align: center;
+   font-family: 'noto-medium';
+   font-size: 16pt;
+   border-radius: 4px;
+   margin: auto;
+   border: 3px solid;
+   color: #414141;
+}
+
+.disable {
+   opacity: 0.2;
+}
+
+.np {
+   margin: 20px;
+}
+
+.percentage {
+   display: block;
+   text-align: center;
+   font-family: 'noto-medium';
+   font-size: 10pt;
+   color: #414141;
+}
+
+.results div:nth-child(1) .num {
+   background-color: #003f5caa;
+   border-color: #003f5c;
+}
+
+.results div:nth-child(2) .num {
+   background-color: #2f4b7c79;
+   border-color: #2f4b7c;
+}
+
+.results div:nth-child(3) .num {
+   background-color: #66519185;
+   border-color: #665191;
+}
+
+.results div:nth-child(4) .num {
+   background-color: #a0519572;
+   border-color: #a05195;
+}
+
+.results div:nth-child(5) .num {
+   background-color: #d4508776;
+   border-color: #d45087;
+}
+
+.results div:nth-child(6) .num {
+   background-color: #f95d6a8e;
+   border-color: #f95d6a;
+}
+
+.results div:nth-child(7) .num {
+   background-color: #ff7b4379;
+   border-color: #ff7c43;
+}
+
+.results div:nth-child(8) .num {
+   background-color: #ffa60083;
+   border-color: #ffa600;
+}
+
+.results div:nth-child(9) .num {
+   background-color: #ffcc0088;
+   border-color: #ffcc00;
+}
+
+.chart {
+   font-family: 'noto-medium';
+   font-size: 12pt;
+   color: #a2a2a2;
+   display: flex;
+   align-items: flex-end;
+   margin-bottom: 40px;
+}
+
+.yAxis {
+   display: flex;
+   flex-direction: column-reverse;
+   width: max-content;
+   justify-content: flex-end;
+   align-items: flex-end;
+   justify-content: space-between;
+   height: 420px;
+   margin: 0 0 2.5% 0px;
+}
+
+.yAxis span {
+   width: max-content;
+   margin: 2.5px 5px 2.5px 0;
+}
+
+.xAxis {
+   display: flex;
+   justify-content: end;
+   justify-content: space-around
+}
+
+.xAxis span {
+   display: block;
+   text-align: center;
+}
+
+.desc {
+   width: 442.9px;
+   height: 397.6px;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   background: url(./background/desc_bg.png);
+   background-size: contain;
+}
+
+.desc div {
+   width: 30px;
+   height: 0%;
+   margin: 0 auto;
+   transition: all ease 1s;
+}
+
+.desc div:nth-child(1) {
+   background-color: #003f5caa;
+   outline: 3px solid #003f5c;
+}
+
+.desc div:nth-child(2) {
+   background-color: #2f4b7c79;
+   outline: 3px solid #2f4b7c;
+}
+
+.desc div:nth-child(3) {
+   background-color: #66519185;
+   outline: 3px solid #665191;
+}
+
+.desc div:nth-child(4) {
+   background-color: #a0519572;
+   outline: 3px solid #a05195;
+}
+
+.desc div:nth-child(5) {
+   background-color: #d4508776;
+   outline: 3px solid #d45087;
+}
+
+.desc div:nth-child(6) {
+   background-color: #f95d6a8e;
+   outline: 3px solid #f95d6a;
+}
+
+.desc div:nth-child(7) {
+   background-color: #ff7b4379;
+   outline: 3px solid #ff7c43;
+}
+
+.desc div:nth-child(8) {
+   background-color: #ffa60083;
+   outline: 3px solid #ffa600;
+}
+
+.desc div:nth-child(9) {
+   background-color: #ffcc0088;
+   outline: 3px solid #ffcc00;
+}
+
+@media screen and (max-width: 600px) {
+   .chart {
+      font-size: 10pt;
+   }
+
+   .np {
+      width: 80px;
+      margin-bottom: 20px;
+   }
+
+   .desc {
+      width: 315.9px;
+      height: 270.6px;
+   }
+
+   .desc div {
+      width: 20px;
+   }
+
+   .yAxis {
+      height: 290px;
+      justify-content: space-between;
+   }
+
+   .yAxis span {
+      margin: 2.5px 5px 2.5px 0;
+   }
+}
